@@ -1,7 +1,7 @@
 <template>
 
       <div class="container-home">
-        <div class="card">
+        <div class="card animate__animated animate__backInLeft">
             <div class="card__header">
                 <img src="https://source.unsplash.com/600x400/?computer" alt="card__image" class="card__image" width="600">
             </div>
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card animate__animated animate__bounceInUp">
             <div class="card__header">
                 <img src="https://source.unsplash.com/600x400/?food" alt="card__image" class="card__image" width="600">
             </div>
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card animate__animated animate__backInRight">
             <div class="card__header">
                 <img src="https://source.unsplash.com/600x400/?car,automobile" alt="card__image" class="card__image" width="600">
             </div>
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card animate__animated animate__backInLeft">
             <div class="card__header">
                 <img src="https://source.unsplash.com/600x400/?computer" alt="card__image" class="card__image" width="600">
             </div>
@@ -83,7 +83,9 @@
                 <p>Kecerdasan buatan (AI) adalah bidang ilmu komputer yang berfokus pada pengembangan sistem yang dapat melakukan tugas-tugas yang membutuhkan kecerdasan manusia. AI mencakup berbagai teknik seperti pembelajaran mesin, pengenalan pola, dan pemrosesan bahasa alami. Tujuan utama AI adalah untuk menciptakan mesin yang dapat berpikir dan bertindak seperti manusia.</p>
             </div>
             <div class="read-more">
-                <a href="#">Read More</a>
+                <a href="#">
+                    <RouterLink :to="{ name: 'detail-ai' }" class="nav-link">Read More</RouterLink>
+                </a>
             </div>
             <div class="card__footer">
                 <div class="user">
@@ -95,7 +97,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card animate__animated animate__bounceInUp">
             <div class="card__header">
                 <img src="https://source.unsplash.com/600x400/?food" alt="card__image" class="card__image" width="600">
             </div>
@@ -105,7 +107,9 @@
                 <p>Seblak adalah makanan khas Indonesia yang terkenal dengan rasa pedas dan gurihnya. Makanan ini terbuat dari kerupuk basah yang dicampur dengan berbagai bahan seperti sayuran, daging, dan telur. Seblak biasanya disajikan dalam bentuk kuah yang kental dan memiliki aroma yang menggugah selera.</p>
             </div>
             <div class="read-more">
-                <a href="#">Read More</a>
+                <a href="#">
+                    <RouterLink :to="{ name: 'detail-seblak' }" class="nav-link">Read More</RouterLink>
+                </a>
             </div>
             <div class="card__footer">
                 <div class="user">
@@ -117,7 +121,7 @@
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card animate__animated animate__backInRight">
             <div class="card__header">
                 <img src="https://source.unsplash.com/600x400/?car,automobile" alt="card__image" class="card__image" width="600">
             </div>
@@ -127,7 +131,9 @@
                 <p>Tesla adalah sebuah perusahaan mobil listrik yang terkenal di seluruh dunia. Perusahaan ini didirikan oleh Elon Musk pada tahun 2003 dan telah menjadi salah satu pemimpin dalam industri mobil listrik. Tesla terkenal karena inovasi dan teknologi canggih yang mereka tawarkan dalam mobil-mobil mereka.</p>
             </div>
             <div class="read-more">
-                <a href="#">Read More</a>
+                <a href="#">
+                    <RouterLink :to="{ name: 'detail-tesla' }" class="nav-link">Read More</RouterLink>
+                </a>
             </div>
             <div class="card__footer">
                 <div class="user">
@@ -156,6 +162,13 @@
 
 p, h4, span, h5, small {
     color: #666;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active di bawah Vue versi 2.1.8 */ {
+  opacity: 0;
 }
 
 body {
