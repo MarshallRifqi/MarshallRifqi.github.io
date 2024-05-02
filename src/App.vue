@@ -15,20 +15,36 @@ import { RouterLink, RouterView } from 'vue-router'
       </a>
       <!-- <div class="dot"></div> -->
     </nav>
-    <transition name="fade" mode="out-in">
+    <transition name="slide-fade" mode="out-in">
       <RouterView></RouterView>
     </transition>
 </template>
 
 <style>
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
+.slide-fade-enter-active {
+  transition: all 0.4s ease-out;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active di bawah Vue versi 2.1.8 */ {
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(-20px); /* Mengubah nilai ke negatif */
   opacity: 0;
 }
 
+/* .fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+} */
 .navMenu {
   position: absolute;
   top: 10%;

@@ -164,12 +164,6 @@ p, h4, span, h5, small {
     color: #666;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active di bawah Vue versi 2.1.8 */ {
-  opacity: 0;
-}
 
 body {
   font-family: "Quicksand", sans-serif;

@@ -1,6 +1,6 @@
 <template>
     <main>
-    ``<div class="container">
+      <div class="container">
         <div class="main-arc">
         <!-- <p></p> -->
         <div class="main-title">
