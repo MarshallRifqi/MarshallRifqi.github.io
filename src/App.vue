@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <nav class="navMenu">
+  <nav class="navMenu animate__animated animate__fadeInDownBig">
       <a href="#">
         <RouterLink :to="{ name: 'home' }" class="nav-link">Home</RouterLink>
       </a>
@@ -23,7 +23,7 @@ import { RouterLink, RouterView } from 'vue-router'
 .navMenu {
   position: absolute;
   top: 10%;
-  left: 50%;
+  left: 45%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
