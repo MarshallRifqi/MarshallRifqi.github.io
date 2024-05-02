@@ -7,9 +7,9 @@ import { RouterLink, RouterView } from 'vue-router'
       <a href="#">
         <RouterLink :to="{ name: 'home' }" class="nav-link">Home</RouterLink>
       </a>
-      <a href="#">
+      <!-- <a href="#">
         <RouterLink :to="{ name: 'detail' }" class="nav-link">Detail</RouterLink>
-      </a>
+      </a> -->
       <a href="#">
         <RouterLink :to="{ name: 'about' }" class="nav-link">About</RouterLink>
       </a>
